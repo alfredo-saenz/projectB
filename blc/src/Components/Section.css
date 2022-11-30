@@ -1,0 +1,13 @@
+.section-img {
+    width: 100%;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn {
+    position: absolute;
+    bottom: 25%;
+}

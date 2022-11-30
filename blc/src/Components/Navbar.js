@@ -14,7 +14,7 @@ function Navbar(props) {
 
 	return (
 		<>
-			<nav ref={navRef}>
+			<nav className='full-nav' ref={navRef}>
 				<img className='blc-logo' src={logo} alt='Burritos la chiquita Logo' />
 				<ul>
 					<li>Menu</li>
@@ -25,9 +25,13 @@ function Navbar(props) {
 					</button>
 				</ul>
 			</nav>
+
+			<div className='nav-container'>
+				<img src={logo} alt="" srcset="" className='nav-logo'/>
 			<button className='nav-btn' onClick={showNavbar}>
 				<FaBars />
 			</button>
+			</div>
 		</>
 	);
 }

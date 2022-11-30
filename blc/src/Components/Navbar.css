@@ -7,6 +7,19 @@
 
 }
 
+.nav-container {
+    background-color: #ff5422;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn, .nav-logo{
+    margin: 10px;
+}
+
+.nav-logo{
+
+}
 
 @media only screen and (max-width: 1024px){
     .nav-btn {
@@ -14,7 +27,7 @@
         opacity: 1;
     }
 
-    nav {
+    .full-nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -28,6 +41,7 @@
         background-color: rgb(255, 0, 0);
         transition: 1s;
         transform: translateY(-100vh);
+        z-index: 100;
     }
 
     .responsive_nav {
