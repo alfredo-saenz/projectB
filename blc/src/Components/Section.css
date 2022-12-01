@@ -23,3 +23,9 @@
     background-color: #ffb62f;
     color: #ff5323;
 }
+
+.section-h1{
+    position: absolute;
+    margin-top: 45%;
+    text-align: center;
+}
