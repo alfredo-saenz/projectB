@@ -9,5 +9,17 @@
 
 .menu-btn {
     position: absolute;
-    bottom: 25%;
+    margin-top: 75%;
+    background-color: #eea8263f;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-btn:hover {
+    border: 2px solid #ff5323;
+    background-color: #ffb62f;
+    color: #ff5323;
 }

@@ -15,7 +15,7 @@ function Navbar(props) {
 	return (
 		<>
 			<nav className='full-nav' ref={navRef}>
-				<img className='blc-logo' src={logo} alt='Burritos la chiquita Logo' />
+				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
 				<ul>
 					<li>Menu</li>
 					<li>About Us</li>

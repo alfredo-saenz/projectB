@@ -6,8 +6,9 @@ export default class Section extends Component {
     return (
         <div className='section-container'>
             <img src={outsideView} alt="" className='section-img'/>
-            <button className='menu-btn'>menu</button>
+            <button className='menu-btn'>MENU</button>
         </div>
     )
   }
 }
+

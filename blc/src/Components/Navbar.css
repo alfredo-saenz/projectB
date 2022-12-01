@@ -18,7 +18,7 @@
 }
 
 .nav-logo{
-
+    width: 25%;
 }
 
 @media only screen and (max-width: 1024px){
@@ -38,7 +38,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: rgb(255, 0, 0);
+        background-color: #ff5422;
         transition: 1s;
         transform: translateY(-100vh);
         z-index: 100;
