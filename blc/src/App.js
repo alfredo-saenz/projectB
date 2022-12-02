@@ -4,6 +4,7 @@ import Menu from './Components/Menu';
 import Section from './Components/Section';
 import {Routes, Route, Link} from 'react-router-dom'
 import { useRef } from 'react';
+import Footer from './Components/Footer';
 
 function App() {
   const ref = useRef(null);
@@ -14,8 +15,9 @@ function App() {
 
   return (
     <>
-  <Navbar />
+  <Navbar handleClick={handleClick} ref={ref}/>
   <Section/>
+  <Footer/>
 
   <Routes>
     <Route path='/' ></Route>

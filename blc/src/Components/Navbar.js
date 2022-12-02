@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({handleClick}) {
 	const navRef = useRef();
 
 	const showNavbar = () => {
