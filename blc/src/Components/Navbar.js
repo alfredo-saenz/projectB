@@ -5,12 +5,15 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
 
-function Navbar(props) {
+function Navbar() {
 	const navRef = useRef();
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle('responsive_nav');
 	};
+
+
+
 
 	return (
 		<>
@@ -18,7 +21,7 @@ function Navbar(props) {
 				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
 				<ul>
 					<li>Menu</li>
-					<li>About Us</li>
+					<button onClick={handleClick}>About Us</button>
 					<li>Contact</li>
 					<button className='nav-btn nav-close-btn' onClick={showNavbar}>
 						<FaTimes />
