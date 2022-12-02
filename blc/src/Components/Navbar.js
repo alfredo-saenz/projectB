@@ -19,7 +19,7 @@ function Navbar(props) {
 				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
 				<ul>
 					<li>Menu</li>
-					<li><Link activeClass="active" to="about" spy={true} smooth={true}>About Us</Link></li>
+					<li><Link activeClass="active" to="about" spy={true} smooth={true} onClick={showNavbar}>About Us</Link></li>
 					<li>Contact</li>
 					<button className='nav-btn nav-close-btn' onClick={showNavbar}>
 						<FaTimes />
