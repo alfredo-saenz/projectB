@@ -28,4 +28,19 @@
     position: absolute;
     margin-top: 45%;
     text-align: center;
+    font-family: Sriracha;
+    color: white;
+    font-size: large;
+    backdrop-filter: blur(5px);
+    width: 80%;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: #ff470094;
+    box-shadow: -1px 6px 7px 0px #0000006e;
+  
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url(../fonts/Sriracha-Regular.ttf);
 }
