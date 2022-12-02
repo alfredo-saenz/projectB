@@ -21,6 +21,18 @@
     width: 25%;
 }
 
+.nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 1024px){
     .nav-btn {
         visibility: visible;
@@ -54,5 +66,5 @@
         right: 2rem;
     }
 
-    
+
 }
