@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
+import {Link} from 'react-scroll'
 
 function Navbar(props) {
 	const navRef = useRef();
@@ -18,7 +19,7 @@ function Navbar(props) {
 				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
 				<ul>
 					<li>Menu</li>
-					<li>About Us</li>
+					<li><Link activeClass="active" to="about" spy={true} smooth={true}>About Us</Link></li>
 					<li>Contact</li>
 					<button className='nav-btn nav-close-btn' onClick={showNavbar}>
 						<FaTimes />

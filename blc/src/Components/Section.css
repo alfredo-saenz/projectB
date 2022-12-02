@@ -44,3 +44,7 @@
     font-family: Sriracha;
     src: url(../fonts/Sriracha-Regular.ttf);
 }
+
+.about-us {
+    text-align: center;
+}
