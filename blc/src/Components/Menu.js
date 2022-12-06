@@ -18,7 +18,7 @@ function Menu(props) {
         const name = menuItemArray[i][1];
         const description = menuItemArray[i][2];
         const price = menuItemArray[i][3];
-        
+
         menuItems.push(<div>
 
             <img src={imgSrc} alt="" />
@@ -30,17 +30,11 @@ function Menu(props) {
     }
 
     return (
-<<<<<<< HEAD
-        <div>
-            <h1>hello from menu</h1>
-        </div>
-=======
         <>
-        <h2>Menu!</h2>       
+        <h2>Menu!</h2>
             {/* <div className='menu-container'>{ menuItems }</div> */}
 
         </>
->>>>>>> dev
     );
 }
 
