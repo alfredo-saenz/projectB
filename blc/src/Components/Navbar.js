@@ -1,12 +1,12 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link as LinkTo } from 'react-router-dom';
 import logo from '../Images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll';
 
-function Navbar(props) {
+function Navbar() {
 	const navRef = useRef();
 
 	const showNavbar = () => {
@@ -17,8 +17,12 @@ function Navbar(props) {
 		<>
 			<nav className='full-nav' ref={navRef}>
 				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
-				<ul style={{listStyle: 'none', cursor: 'pointer' }}>
-					<li>Menu</li>
+				<ul style={{ listStyle: 'none', cursor: 'pointer' }}>
+					<li>
+						<LinkTo to="/menu" onClick={showNavbar}>
+							Menu
+						</LinkTo>
+					</li>
 					<li>
 						<Link
 							activeClass='active'

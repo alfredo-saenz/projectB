@@ -2,8 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Menu from './Components/Menu';
 import Section from './Components/Section';
-import { Routes, Route, Link } from 'react-router-dom';
-import { useRef } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
 
 function App() {
@@ -14,8 +13,8 @@ function App() {
 			<Footer />
 
 			<Routes>
-				<Route path='/'></Route>
-				<Route path='/menu' element={<Menu />}></Route>
+				<Route path="/"></Route>
+				<Route path="/menu" element={<Menu/>}></Route>
 			</Routes>
 		</>
 	);

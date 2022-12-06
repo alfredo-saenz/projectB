@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import outsideView from '../Images/outside-view.jpg';
 import './Section.css';
-export default class Section extends Component {
 
-
-	render() {
+function Section(){
 		return (
 			<>
 
@@ -20,9 +18,10 @@ export default class Section extends Component {
         </div>
         <div id='location' className='location-section'>
           <h2>Come Visit Us</h2>
-          
+
         </div>
 			</>
 		);
 	}
-}
+
+  export default Section;
