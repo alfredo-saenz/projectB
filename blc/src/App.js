@@ -23,6 +23,3 @@ function App() {
 }
 
 export default App;
-
-//TODO figure out how to show menu when nav menu btn is clicked.
-//* Note: might have something to do with state....

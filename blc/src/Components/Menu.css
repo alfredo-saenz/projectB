@@ -1,0 +1,10 @@
+ul {
+    padding: 0;
+}
+.menuItems {
+    list-style: none;
+}
+
+.menuImgs{
+    width: 100%;
+}
