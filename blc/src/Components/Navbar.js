@@ -4,7 +4,8 @@ import logo from '../Images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
+import { Link as LinkToComp } from 'react-router-dom';
 
 function Navbar() {
 	const navRef = useRef();
@@ -13,16 +14,19 @@ function Navbar() {
 		navRef.current.classList.toggle('responsive_nav');
 	};
 
+
 	return (
 		<>
 			<nav className='full-nav' ref={navRef}>
+			<LinkToComp to='/'>
 				<img className='nav-logo' src={logo} alt='Burritos la chiquita Logo' />
-				<ul style={{ listStyle: 'none', cursor: 'pointer' }}>
-					<li>
-						<LinkTo to="/menu" onClick={showNavbar}>
-							Menu
-						</LinkTo>
-					</li>
+			</LinkToComp>
+				<ul style={{listStyle: 'none', cursor: 'pointer' }}>
+
+					<LinkToComp to='/menu' onClick={showNavbar}>
+					<li>Menu</li>
+					</LinkToComp>
+
 					<li>
 						<Link
 							activeClass='active'
@@ -50,7 +54,9 @@ function Navbar() {
 			</nav>
 
 			<div className='nav-container'>
+				<LinkToComp to='/'>
 				<img src={logo} alt='' srcset='' className='nav-logo' />
+				</LinkToComp>
 				<button className='nav-btn' onClick={showNavbar}>
 					<FaBars />
 				</button>
