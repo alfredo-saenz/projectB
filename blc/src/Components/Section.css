@@ -41,7 +41,7 @@
     border-radius: 12px;
     background-color: #ff470094;
     box-shadow: -1px 6px 7px 0px #0000006e;
-  
+
 }
 
 @font-face {
@@ -51,4 +51,8 @@
 
 .about-us {
     text-align: center;
+}
+
+.location-section {
+    height: 100vh;
 }

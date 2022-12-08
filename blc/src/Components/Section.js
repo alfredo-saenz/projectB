@@ -35,7 +35,7 @@ function Section(props) {
 			</div>
 			<div id="location" className="location-section">
 				<h2>Come Visit Us</h2>
-        <Location/>
+          <Location/>
 			</div>
 		</>
 	);
