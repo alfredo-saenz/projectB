@@ -4,8 +4,7 @@ import "./Menu.css";
 import menuArray from "./menuArray";
 
 function Menu(props) {
-	// Menu items are created with createMenuObj() factory function.
-	//This can be used in the future if admin page is created so user can create their own menu items automatically.
+
 	const menuItems = menuArray;
 
 	//This will return an array with menu items catergorized.
