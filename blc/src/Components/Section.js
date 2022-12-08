@@ -3,6 +3,7 @@ import outsideView from "../Images/outside-view.jpg";
 import "./Section.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Location from "./Location";
 
 function Section(props) {
 
@@ -34,6 +35,7 @@ function Section(props) {
 			</div>
 			<div id="location" className="location-section">
 				<h2>Come Visit Us</h2>
+        <Location/>
 			</div>
 		</>
 	);
