@@ -1,11 +1,11 @@
-export function createMenuObj(id, img, name, description, price) {
+export function createMenuObj(id, title, category, price, desc) {
     return {
       // id is needed when using map() for react.
       id: id,
-      img: img,
-      name: name,
-      description: description,
+      title: title,
+      category: category,
       price: price,
+      desc: desc,
     }
     
 } 
