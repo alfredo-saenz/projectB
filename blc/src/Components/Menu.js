@@ -80,31 +80,31 @@ function Menu(props) {
 	});
 
 	return (
-		<>	
+		<>
 
 			<h1 className="main-menu-title">Menu</h1>
 			<h3 className="jumpto-title">Jump to section</h3>
 			<div className="menu-tabs">
 				<Link activeClass="active" to="burrito-sec" spy={true} smooth={true}>
-					
+
 				<button className="menu-tab-btns burrito-btn">Burrito</button>
 				</Link>
-				
+
 				<Link activeClass="active" to="taco-sec" spy={true} smooth={true}>
-				<button className="menu-tab-btns taco-btn">Taco</button> 
-					
+				<button className="menu-tab-btns taco-btn">Taco</button>
+
 				</Link>
 				<Link activeClass="active" to="torta-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns torta-btn">Torta</button>
-					
+
 				</Link>
 				<Link className="fav-btn-parent" activeClass="active" to="fav-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns chiq-fav-btn">La Chiquita Favorites</button>
-					
+
 				</Link>
 				<Link activeClass="active" to="platillo-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns platillo-btn">Platillos</button>
-					
+
 				</Link>
 
 				<Link activeClass="active" to="quesa-sec" spy={true} smooth={true}>
