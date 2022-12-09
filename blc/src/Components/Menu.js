@@ -80,31 +80,31 @@ function Menu(props) {
 	});
 
 	return (
-		<>	
+		<>
 
 			<h1 className="main-menu-title">Menu</h1>
 			<h3 className="jumpto-title">Jump to section</h3>
 			<div className="menu-tabs">
 				<Link activeClass="active" to="burrito-sec" spy={true} smooth={true}>
-					
+
 				<button className="menu-tab-btns burrito-btn">Burrito</button>
 				</Link>
-				
+
 				<Link activeClass="active" to="taco-sec" spy={true} smooth={true}>
-				<button className="menu-tab-btns taco-btn">Taco</button> 
-					
+				<button className="menu-tab-btns taco-btn">Taco</button>
+
 				</Link>
 				<Link activeClass="active" to="torta-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns torta-btn">Torta</button>
-					
+
 				</Link>
 				<Link className="fav-btn-parent" activeClass="active" to="fav-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns chiq-fav-btn">La Chiquita Favorites</button>
-					
+
 				</Link>
 				<Link activeClass="active" to="platillo-sec" spy={true} smooth={true}>
 				<button className="menu-tab-btns platillo-btn">Platillos</button>
-					
+
 				</Link>
 
 				<Link activeClass="active" to="quesa-sec" spy={true} smooth={true}>
@@ -116,36 +116,6 @@ function Menu(props) {
 
 			</div>
 			<ul className="full-menu">
-<<<<<<< HEAD
-				<div className="menu-item-card burritos">
-                    <h1>Burritos</h1>
-                    {burritoItems}
-                </div>
-				<div className="menu-item-card tacos">
-                    <h1>Tacos</h1>
-                    {tacoItems}
-                 </div>
-				<div className="menu-item-card tortas">
-                    <h1>Tortas</h1>
-                    {tortaItems}
-
-                </div>
-				<div className="menu-item-card chiq-favs">
-                    <h1>La Chiquita Favorites</h1>
-                    {chiqFavItems}
-
-                     </div>
-				<div className="menu-item-card platillos">
-                    <h1>Platillos</h1>
-                    {platilloItems}
-
-                </div>
-				<div className="menu-item-card quesadillas">
-                    <h1>Quesadillas</h1>
-                    {quesadillaItems}
-
-                </div>
-=======
 				<h1 id="burrito-sec" className="category-title">Burritos</h1>
 				<div className="menu-category burritos">
 					{burritoItems}
@@ -185,7 +155,6 @@ function Menu(props) {
 					<p className="drink-side-prices">$1.75</p>
 					<p className="drink-side-prices">$1.75</p>
 				</div>
->>>>>>> dev
 			</ul>
 		</>
 	);

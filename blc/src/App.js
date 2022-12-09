@@ -7,19 +7,16 @@ import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 function App() {
 	return (
-		<Router>
-			<div>
-				<Navbar />
-				{/* Put components that will change in here */}
-				<Routes>
-					<Route path='/' element={<Section />} />
-					<Route path='/menu' element={<Menu />} />
-				</Routes>
-				<ScrollToTop />
-				<Footer />
-			</div>
-		</Router>
-
+		<div>
+			<Navbar />
+			{/* Put components that will change in here */}
+			<Routes>
+				<Route path='/' element={<Section />} />
+				<Route path='/menu' element={<Menu />} />
+			</Routes>
+			<ScrollToTop />
+			<Footer />
+		</div>
 	);
 }
 

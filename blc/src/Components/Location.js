@@ -18,7 +18,9 @@ function Location(props) {
 		return (
 			<div className='map'>
 				<GoogleMap
-					
+					options={{
+						disableDefaultUI: true
+					}}
 					clickableIcon={true}
 					zoom={15}
 					center={{ lat: 39.11583, lng: -94.64421 }}
