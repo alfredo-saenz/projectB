@@ -1,0 +1,10 @@
+export const galleryImg1 = require('./2017-01-18 (1).jpg');
+export const galleryImg2 = require('./2017-01-18 (2).jpg');
+export const galleryImg3 = require('./2017-01-18.jpg');
+export const galleryImg4 = require('./2017-03-10.jpg');
+export const galleryImg5 = require('./2017-06-20.jpg');
+export const galleryImg6 = require('./2018-09-06.jpg');
+export const galleryImg7 = require('./20180630_123910.jpg');
+export const galleryImg8 = require('./2021-06-02.jpg');
+export const galleryImg9 = require('./IMG_20220915_103425.jpg');
+export const galleryImg10 = require('./IMG_20220915_103429.jpg');
