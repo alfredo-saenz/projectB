@@ -36,8 +36,8 @@ function Gallery() {
 
 	return (
 		<>
-			Gallery
-            <div>
+			<h1 className="gallery-title">Gallery</h1>
+            <div className="gallery-container">
                 
 			{galleryElements}
             </div>   
