@@ -5,6 +5,7 @@ import Section from './Components/Section';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
+import Gallery from './Components/Gallery';
 function App() {
 	return (
 		<Router>
@@ -14,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Section />} />
 					<Route path='/menu' element={<Menu />} />
+					<Route path='/gallery' element={<Gallery />} />
 				</Routes>
 				<ScrollToTop />
 				<Footer />

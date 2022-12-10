@@ -1,0 +1,11 @@
+.gallery-imgs {
+    width: 100%;
+}
+
+.img-containers {
+    width: auto;
+}
+
+/*   gallery contaienr  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
