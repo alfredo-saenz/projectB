@@ -49,6 +49,9 @@ function Navbar(props) {
 					<LinkToComp onClick={handleClick} to="/menu">
 						<li>Menu</li>
 					</LinkToComp>
+					<LinkToComp onClick={handleClick} to="/gallery">
+						<li>Gallery</li>
+					</LinkToComp>
 
 					<li>
 						<Link
