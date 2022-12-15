@@ -39,6 +39,7 @@ function Navbar(props) {
 						className="nav-logo"
 						src={logo}
 						alt="Burritos la chiquita Logo"
+						onClick={handleClick}
 					/>
 				</LinkToComp>
 				<ul
@@ -64,7 +65,7 @@ function Navbar(props) {
 					<li>
 						<Link
 							activeClass="active"
-							to="Location"
+							to="location"
 							spy={true}
 							smooth={true}
 							//this will work when location section is added.
