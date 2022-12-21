@@ -158,3 +158,70 @@ ul {
 .sides-container {
     border-bottom: 4px solid white;
 }
+
+@media only screen and (min-width: 600px) {
+    .menu-category {    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;}
+        .menu-items { margin-left: 2%;
+            margin-right: 2%;
+            width: 45%;}
+            /* #fav-sec {    display: flex;
+                flex-direction: column;} */
+        .plati-item {width: 100%;}
+        
+    }
+    
+    @media only screen and (min-width: 800px) {
+        .full-menu {display: flex;
+            flex-direction: row;
+            background: #0b0d0c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 4%;
+    margin-top: 0;
+    padding-bottom: 20px;
+    justify-content: center;
+    width: 92%;
+    align-items: flex-start;
+    flex-wrap: wrap;}
+
+    .menu-category {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .category-title { font-size: 6vh;
+        width: 100%;}
+        
+        
+        .menu-items { margin-left: 2%;
+            margin-right: 2%;
+            width: 45%;
+        align-content: space-between;}
+
+    .tacos {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tortas {
+        width: 45%;
+      
+    }
+    .platillos {
+        width: 45%;
+    }
+    .plati-item {
+        width: 100%;
+    }
+    .quesadillas {
+        width: 45%;
+
+    }
+}
