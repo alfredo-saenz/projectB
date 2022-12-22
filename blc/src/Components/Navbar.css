@@ -72,7 +72,12 @@ header .nav-btn {
 }
 
 .nav-logo{
-   width: 45%;
+   width: 20vw;
+}
+@media only screen and (min-width: 600px) {
+    .nav-logo{
+        width: 9vw;
+    }
 }
 
 .nav-btn {
