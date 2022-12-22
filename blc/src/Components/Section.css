@@ -1,75 +1,107 @@
 .section-img {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
-
+.image-overlay {
+	width: 100%;
+	background-image: radial-gradient(transparent, #00000057);
+	height: 85vh;
+	position: absolute;
+	z-index: 0;
+}
 .section-container {
-    display: flex;
-    justify-content: center;
-    height: 85vh;
+	display: flex;
+	justify-content: flex-start;
+	height: 85vh;
+}
+.header-menu-container {
+	position: absolute;
 }
 
 .menu-btn {
-    position: absolute;
-    margin-top: 65vh;
-    background-color: #eea8263f;
-    border: 2px solid #ffffff;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 3vw;
+	/* position: absolute; */
+	/* margin-top: 65vh; */
+	background-color: #ff470094;
+	border: 2px solid #ffffff;
+	color: white;
+	padding: 2%;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 3vw;
+	margin-left: 5%;
+	font-family: Norwester;
 }
-.link-btn-container{
-    position: absolute;
-    margin-top: 75%;
+.link-btn-container {
+	position: absolute;
+	margin-top: 75%;
 }
 
 .menu-btn:hover {
-    border: 2px solid #ff5323;
-    background-color: #ffb62f;
-    color: #ff5323;
+	border: 2px solid #ffffff;
+	background-color: #ff4800;
+
+	color: #ffffff;
 }
 
-.section-h1{
-    position: absolute;
-    margin-top: 44vh;
-    text-align: center;
-    font-family: Sriracha;
-    color: white;
-    font-size: 4vw;
-    backdrop-filter: blur(5px);
-    width: 80%;
-    padding: 6px;
-    border-radius: 12px;
-    background-color: #ff470094;
-    box-shadow: -1px 6px 7px 0px #0000006e;
-
+.section-h1 {
+	/* position: absolute; */
+	margin-top: 36vh;
+	/* text-align: center; */
+	font-family: Norwester;
+	color: white;
+	font-size: 4vw;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	width: 80%;
+	padding: 6px;
+	border-radius: 4px;
+	background-color: #ff470094;
+	box-shadow: -1px 6px 7px 0px #0000006e;
+	margin-left: 5%;
 }
 
 @font-face {
-    font-family: Sriracha;
-    src: url(../fonts/Sriracha-Regular.ttf);
+	font-family: Norwester;
+	src: url(../fonts/norwester.otf);
 }
 
 .about-us {
-    text-align: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	margin: 2%;
+
+}
+.about-us-h2 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.about-us-p {
+	font-size: 2.5vw;
+	text-align: left;
+	justify-content: right;
+	margin: 0;
 }
 
+.aboutus-img {
+	width: 85%;
+}
 /* .location-section {
     height: 100vh;
 } */
 
 .location-section {
-    text-align: center;
+	text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
-    .menu-btn{
-        font-size: 1vw;
-    }
-    .section-h1{
-        font-size: 2vw;
-        width: 70%;
-    }
+	.menu-btn {
+		font-size: 2vw;
+		padding: 1%;
+	}
+	.section-h1 {
+		font-size: 3vw;
+		width: 53%;
+	}
 }

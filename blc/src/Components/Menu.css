@@ -1,6 +1,6 @@
 @font-face {
 	font-family: TropicalAsian;
-	src: url(../fonts/Davenvaledemo-0W12R.otf);
+	src: url(../fonts/Tropical-Asian.ttf);
 }
 @font-face {
 	font-family: BrightWall;
@@ -33,6 +33,9 @@ ul {
 	padding: 10%;
 	background-color: #ff5422;
 	border-bottom: 1px solid white;
+}
+.menu-tab-btns:hover {
+	background-color:#ff7d55 ;
 }
 
 .chiq-fav-btn {
@@ -235,7 +238,9 @@ ul {
 			flex-direction: row;
 			justify-content: space-between;
 		}
-		
+		.menu-tab-btns {
+			padding: 5%;
+		}
 		.category-title {
 			font-size: 6vh;
 			width: 100%;
