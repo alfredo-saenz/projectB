@@ -12,9 +12,9 @@ export default class Footer extends Component {
         <footer>
             <img src={logo} alt="" srcset="" className='footer-logo'/>
             <div className='socials-container'>
+              <a  className='social-links' href="https://www.facebook.com/burritoslachiquita1/">
                 <img src={facebook} alt="" className='social-icons' />
-                <img src={twitter} alt="" className='social-icons'/>
-                <img src={insta} alt="" className='social-icons'/>
+              </a>
             </div>
 
             <div className='copyright'>
