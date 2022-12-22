@@ -1,0 +1,35 @@
+footer{
+    background-color: #ff5422;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 15vw;
+    margin: 10px;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+}
+.social-icons {
+     height: 10%;
+    width: 5vh;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+.social-links{
+    height: 100%;
+}
+.copyright{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copy-item{
+    margin: 0;
+    color: white;
+    font-size: .7em;
+}

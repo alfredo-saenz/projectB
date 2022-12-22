@@ -1,0 +1,27 @@
+.gallery-imgs {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.img-containers {
+    width: auto;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    justify-items: center;
+    margin: 8px;
+    padding: 0;
+    padding-bottom: 2%;
+}
+
+.gallery-title {
+    text-align: center;    
+}
+/*   gallery contaienr  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
