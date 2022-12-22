@@ -1,21 +1,24 @@
 .section-img {
     width: 100%;
+    object-fit: cover;
 }
 
 .section-container {
     display: flex;
     justify-content: center;
+    height: 85vh;
 }
 
 .menu-btn {
     position: absolute;
-    margin-top: 75%;
+    margin-top: 65vh;
     background-color: #eea8263f;
     border: 2px solid #ffffff;
     color: white;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 3vw;
 }
 .link-btn-container{
     position: absolute;
@@ -30,7 +33,7 @@
 
 .section-h1{
     position: absolute;
-    margin-top: 45%;
+    margin-top: 44vh;
     text-align: center;
     font-family: Sriracha;
     color: white;
@@ -56,3 +59,17 @@
 /* .location-section {
     height: 100vh;
 } */
+
+.location-section {
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .menu-btn{
+        font-size: 1vw;
+    }
+    .section-h1{
+        font-size: 2vw;
+        width: 70%;
+    }
+}

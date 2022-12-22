@@ -171,7 +171,7 @@ function Menu(props) {
 					<p className="drink-side-prices">$1.5</p>
 				</div>
 				<div className="menu-category sides-container">
-				<h1 className="category-title  drink-side-title">Sides</h1>
+				<h1 id="side-sec" className="category-title  drink-side-title">Sides</h1>
 					<p className="sides">Arroz / Rice</p>
 					<p className="sides">Frijoles / Beans</p>
 					<p className="drink-side-prices">$1.75</p>

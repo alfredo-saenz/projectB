@@ -6,7 +6,7 @@ footer{
 }
 
 .footer-logo {
-    width: 30%;
+    width: 15vw;
     margin: 10px;
 }
 
@@ -16,11 +16,13 @@ footer{
 }
 .social-icons {
      height: 10%;
-    width: 5%;
+    width: 5vh;
     margin: 3px;
     margin-bottom: 10px;
 }
-
+.social-links{
+    height: 100%;
+}
 .copyright{
     text-align: center;
     margin-bottom: 10px;
