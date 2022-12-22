@@ -1,6 +1,49 @@
+header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #ff5422;
+    color: white;
+}
+.home-logo{
+    height: 60px;
+    width: auto;
+}
+.navbar-title {
+    margin-right: auto;
+    padding: 12px 16px;
+}
+
+.navbar-item {
+    padding: 16px 16px;
+    cursor: pointer;
+}
 
 
-.blc-logo {
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    /* margin-right: auto; */
+}
+
+
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1rem;
+
+}
+
+/* .blc-logo {
     height: 200px;
     width: 200px;
     border: 1px solid red;
@@ -55,16 +98,16 @@
     justify-content: flex-end;
     position: absolute;
     top: 0;
-}
+} */
 
 @media only screen and (max-width: 1024px){
-    .nav-btn {
+    header .nav-btn {
         visibility: visible;
         opacity: 1;
     }
 
-    .full-nav {
-    
+    header nav {
+
         position: fixed;
         top: 0;
         left: 0;
