@@ -6,4 +6,21 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-radius: 10px;
+    margin-top: 2%;
+    height: 30vh;
+}
+
+.hours-container {
+    list-style-type: none;
+}
+
+.hours-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 5%;
+    text-align: left;
+    font-size: 1.1em;
 }

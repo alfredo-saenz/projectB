@@ -6,11 +6,17 @@
 	font-family: BrightWall;
 	src: url(../fonts/Brightwall.ttf);
 }
+@font-face {
+	font-family: Norwester;
+	src: url(../fonts/norwester.otf);
+}
 ul {
 	padding: 0;
 }
+
 .main-menu-title {
 	text-align: center;
+	font-family: Norwester;
 }
 .jumpto-title {
 	margin-bottom: 2%;
@@ -26,13 +32,14 @@ ul {
 }
 
 .menu-tab-btns {
+	font-family: Norwester;
 	color: white;
 	width: 100%;
 	border-radius: 0;
 	border-style: none;
 	padding: 10%;
 	background-color: #ff5422;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
 .menu-tab-btns:hover {
 	background-color:#ff7d55 ;
@@ -75,6 +82,7 @@ ul {
 	font-size: 15vw;
 	color: #ff5422;
 	text-align: center;
+	font-synthesis: none;
 }
 
 .menu-item-title {
@@ -85,7 +93,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #0b0d0c;
+	background: #0D1F2D;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	margin: 4%;
@@ -99,7 +107,8 @@ ul {
 	margin-left: 10%;
 	margin-right: 10%;
 	align-items: center;
-	border-bottom: 4px solid white;
+	border-bottom: 1px solid rgb(118, 118, 118);
+
 }
 .menu-item-title {
 	grid-column-start: 1;
@@ -122,6 +131,7 @@ ul {
 .fav-title {
 	font-family: BrightWall;
 	color: #e8d658;
+	font-size: 10vw;
 }
 
 .drinks-container {
@@ -157,11 +167,13 @@ ul {
 }
 
 .drinks-container {
-	border-bottom: 4px solid white;
+	border-bottom: 1px solid rgb(118, 118, 118);
+
 }
 
 .sides-container {
-	border-bottom: 4px solid white;
+	border-bottom: 1px solid rgb(118, 118, 118);
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -188,6 +200,7 @@ ul {
     grid-template-rows: 1fr repeat(5, 10vh);
     grid-auto-flow: column;
     color: white;
+	margin-top: 0;
 		}
 		#drink-sec {
 			grid-column-start: 1;
@@ -199,6 +212,7 @@ ul {
 			grid-template-rows: 1fr repeat(2, 12vh);
 			grid-auto-flow: column;
 			color: white;
+			margin-top: 0;
 		}
 		#side-sec {
 			grid-column-start: 1;
@@ -216,11 +230,10 @@ ul {
 		}
 	}
 	
-	@media only screen and (min-width: 800px) {
+	@media only screen and (min-width: 600px) {
 		.full-menu {
 			display: flex;
 			flex-direction: row;
-			background: #0b0d0c;
 			border-bottom-left-radius: 10px;
 			border-bottom-right-radius: 10px;
 			margin: 4%;
@@ -242,7 +255,7 @@ ul {
 			padding: 5%;
 		}
 		.category-title {
-			font-size: 6vh;
+			font-size: 8vh;
 			width: 100%;
 		}
 		
@@ -275,12 +288,16 @@ ul {
 		.drinks-container {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: repeat(6, 1fr);
+			grid-template-rows: repeat(6, auto);
 			margin: 5%;
 			width: 35%;
+			margin-top: 0;
 		}
 		#fav-sec {
-			font-size: 5vw;
+			font-size: 8vw;
+		}
+		.fav-title{
+			font-size: 4vw;
 		}
 		#drink-sec {
 			grid-column-start: 1;
@@ -289,8 +306,9 @@ ul {
 		.sides-container {
 			display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto;
 		margin: 5%;
+		margin-top: 0;
 		width: 35%;
 	}
 	#side-sec{

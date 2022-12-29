@@ -82,7 +82,6 @@ function Menu(props) {
 	return (
 		<>
 			<h1 className="main-menu-title">Menu</h1>
-			<h3 className="jumpto-title">Jump to section</h3>
 			<div className="menu-tabs">
 				<Link activeClass="active" to="burrito-sec" spy={true} smooth={true}>
 					<button className="menu-tab-btns burrito-btn">Burrito</button>
@@ -166,7 +165,7 @@ function Menu(props) {
 
 					<p className="drink-side-prices">$2.5</p>
 					<p className="drink-side-prices">$2</p>
-					<p className="drink-side-prices">$1.5 16oz / $2.5 24oz</p>
+					<p className="drink-side-prices">16oz $1.5<br></br>24oz $2.5</p>
 					<p className="drink-side-prices">$2.5</p>
 					<p className="drink-side-prices">$1.5</p>
 				</div>

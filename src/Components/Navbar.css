@@ -1,15 +1,21 @@
+@font-face {
+    font-family: Norwester;
+    src: url(../fonts/norwester.otf);
+}
+
 header {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
     height: 80px;
-    padding: 0 2rem;
+    padding: 0 .5rem;
     background-color: #ff5422;
     color: white;
 }
 .home-logo{
     height: 60px;
     width: auto;
+    padding-left: 0;
 }
 .navbar-title {
     margin-right: auto;
@@ -19,6 +25,15 @@ header {
 .navbar-item {
     padding: 16px 16px;
     cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: Norwester;
+    transition: color .5s;
+}
+.navbar-item:hover {
+    color: #ddc52a;
 }
 
 

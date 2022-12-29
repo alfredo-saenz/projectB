@@ -41,14 +41,14 @@ function Location(props) {
 						</InfoWindow>
 					</Marker>
 				</GoogleMap>
-				<div>
-					<p>Store Hours:</p>
-					<ul>
-						<li>Monday - Friday</li>
-						<li>10am-4pm</li>
-						<li>Saturday</li>
-						<li>10am-2pm</li>
-						<li>Sunday</li>
+				<div className='hours-section'>
+					<h3>Store Hours</h3>
+					<ul className='hours-container'>
+						<li cla>Monday - Friday:</li>
+						<li>10AM - 4PM</li>
+						<li>Saturday:</li>
+						<li>10AM - 2PM</li>
+						<li>Sunday:</li>
 						<li>Closed</li>
 					</ul>
 				</div>

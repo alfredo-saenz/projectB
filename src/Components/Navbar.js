@@ -7,12 +7,31 @@ import './Navbar.css';
 import { Link } from 'react-scroll';
 import { Link as LinkToComp } from 'react-router-dom';
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Navbar(props) {
 	const navRef = useRef();
+	const pathLocation = useLocation();
+	const pathNavigator = useNavigate();
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle('responsive_nav');
+	// console.log(pathLocation);
+	const showNavbar = (event) => {
+		const selectedElement = event.target.firstChild.nodeValue
+// HECTOR You are trying scroll to the targeted section when the nav btn is clicked from outside the home page.
+//https://stackoverflow.com/questions/71974932/react-change-view-and-then-scroll-to-element
+		if (pathLocation === "/") {
+			navRef.current.classList.toggle('responsive_nav');
+		} else {
+				if (selectedElement === "About Us") {
+					const aboutId = 'about-us';
+				} else if (selectedElement === "Location") {
+					const locationId = 'location';
+					
+				}
+			pathNavigator('/');
+			<Link to='about'></Link>
+			navRef.current.classList.toggle('responsive_nav');
+		}
 	};
 
 	return (
@@ -25,14 +44,25 @@ function Navbar(props) {
 			</div>
 
 			<nav className='nav-section' ref={navRef}>
-				<a className='navbar-item'>
-					<LinkToComp to='/menu' onClick={showNavbar}>Menu</LinkToComp>
-				</a>
-				<a className='navbar-item'>
+				<LinkToComp to='/menu' onClick={showNavbar}>
+				<button className='navbar-item'>
+					Menu
+				</button>
+				</LinkToComp>
+
+				<LinkToComp to='/gallery' onClick={showNavbar}>
+				<button className='navbar-item'>
+					Gallery
+				</button>
+				</LinkToComp>
+			
+
+				{/* <a className='navbar-item'>
 					<LinkToComp to='/gallery'>Gallery</LinkToComp>
-				</a>
+				</a> */}
 				<a className='navbar-item'>
-					<Link
+					<Link 
+						className='navbar-item'
 						activeClass='active'
 						to='about'
 						spy={true}
@@ -43,6 +73,7 @@ function Navbar(props) {
 				</a>
 				<a className='navbar-item'>
 					<Link
+						className='navbar-item'
 						activeClass='active'
 						to='location'
 						spy={true}

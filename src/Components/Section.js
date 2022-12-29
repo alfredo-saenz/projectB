@@ -25,15 +25,20 @@ function Section(props) {
 				</div>
 			</div>
 			<div id="about" className="about-us">
-				<h2 className="about-us-h2">About Us</h2>
 				<img className="aboutus-img" src={mexicoChef} alt="" />
 				<p className="about-us-p">
+					<span>
+				<h2 className="about-us-h2">About Us</h2>
+					</span>
 				Burritos La Chiquita has a rich history and a passion for authentic Mexican cuisine.<br></br>Our warm and welcoming atmosphere is the perfect place to gather with friends and family and enjoy a delicious meal.<br></br> Thank you for choosing to dine with us. We can't wait to serve you!
 				</p>
 			</div>
 			<div id="location" className="location-section">
-				<h2>Come Visit Us</h2>
+				<div className="location-content">
+				<h2 className="location-title">Come Visit Us</h2>
 				<Location />
+
+				</div>
 			</div>
 		</>
 	);

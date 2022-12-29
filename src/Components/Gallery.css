@@ -4,6 +4,7 @@
     height: 100%;
     object-fit: cover;
     transition: opacity 0.25s ease-in-out;
+    border-radius: 3%;
 }
 
 .img-containers {
@@ -21,6 +22,7 @@
 
 .gallery-title {
     text-align: center;    
+    font-family: Norwester;
 }
 /*   gallery contaienr  display: grid;
     grid-template-columns: 1fr 1fr;

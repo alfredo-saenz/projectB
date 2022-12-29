@@ -8,7 +8,7 @@ import ScrollToTop from './Components/ScrollToTop';
 import Gallery from './Components/Gallery';
 function App() {
 	return (
-		<div>
+		<div className='app-div'>
 			<Navbar />
 			{/* Put components that will change in here */}
 			<Routes>

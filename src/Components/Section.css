@@ -1,3 +1,6 @@
+h2{
+	margin: 0;
+}
 .section-img {
 	width: 100%;
 	object-fit: cover;
@@ -64,21 +67,27 @@
 	font-family: Norwester;
 	src: url(../fonts/norwester.otf);
 }
-
+/* About Us */
 .about-us {
 	text-align: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto 1fr;
-	margin: 2%;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    /* margin: 2%; */
+    /* border: 4px solid #ff7d55; */
+    /* border-radius: 10px; */
+    padding: 10%;
+    color: white;
+    background-color: #1F88D8;
 }
 .about-us-h2 {
 	grid-column-start: 1;
 	grid-column-end: 3;
+	margin-top: 0;
+	margin-bottom: 5%;
 }
 .about-us-p {
-	font-size: 2.5vw;
+	font-size: 2.2vw;
 	text-align: left;
 	justify-content: right;
 	margin: 0;
@@ -86,15 +95,24 @@
 
 .aboutus-img {
 	width: 85%;
+	border-radius: 10px;
 }
-/* .location-section {
-    height: 100vh;
-} */
 
+/* Location */
 .location-section {
 	text-align: center;
 }
 
+.location-content {
+background-color: #1C7BC4;
+padding: 5%;
+color: white;
+}
+.location-title {
+	font-size: 1em;
+}
+
+/* extra..? */
 @media only screen and (min-width: 600px) {
 	.menu-btn {
 		font-size: 2vw;
@@ -103,5 +121,8 @@
 	.section-h1 {
 		font-size: 3vw;
 		width: 53%;
+	}
+	.location-title {
+		font-size: 2em;
 	}
 }
