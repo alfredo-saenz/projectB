@@ -16,24 +16,11 @@ function Navbar(props) {
 
 	// console.log(pathLocation);
 	const showNavbar = (event) => {
-		const selectedElement = event.target.firstChild.nodeValue
-// HECTOR You are trying scroll to the targeted section when the nav btn is clicked from outside the home page.
-//https://stackoverflow.com/questions/71974932/react-change-view-and-then-scroll-to-element
-		if (pathLocation === "/") {
-			navRef.current.classList.toggle('responsive_nav');
-		} else {
-				if (selectedElement === "About Us") {
-					const aboutId = 'about-us';
-				} else if (selectedElement === "Location") {
-					const locationId = 'location';
-					
-				}
-			pathNavigator('/');
-			<Link to='about'></Link>
-			navRef.current.classList.toggle('responsive_nav');
-		}
-	};
 
+					navRef.current.classList.toggle('responsive_nav');
+
+	};
+	
 	return (
 		<header>
 			<div className='home-logo navbar-title navbar-item'>
@@ -78,7 +65,8 @@ function Navbar(props) {
 						to='location'
 						spy={true}
 						smooth={true}
-						onClick={showNavbar}>
+						onClick={showNavbar}
+						>
 						Location
 					</Link>
 				</a>
